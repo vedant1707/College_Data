@@ -1,0 +1,5 @@
+word = input("Input a word to reverse: ")
+print("\n Reversed word is: ")
+for char in range(len(word) - 1, -1, -1):
+  print(word[char], end="")
+print("\n")
