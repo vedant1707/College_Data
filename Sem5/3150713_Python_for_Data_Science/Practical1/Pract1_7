@@ -1,0 +1,13 @@
+num = int(input("Enter the number of Prime Numbers to be printed: ")) 
+count=0 
+i=2
+print("Prime numbers are:",end=' ')
+while (count < num): 
+ flag=0 
+ for j in range(2,i): 
+     if(i%j==0): 
+         flag=1 
+ if(flag==0): 
+         print(i,end=" ") 
+         count+=1 
+ i+=1
