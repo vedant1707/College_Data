@@ -1,0 +1,17 @@
+nterms = int(input("Enter the Number of Terms in Fibonacci Series : "))
+n1 = 0
+n2 = 1
+count = 1
+if nterms <= 0:
+    print("Enter Positive Integer")
+elif nterms == 1:
+    print("Fibonacci series upto ",nterms," is : ")
+    print(n1)
+else:
+ print("Fibonacci Series upto ",nterms," is : ")
+ while(count <= nterms):
+   print(n1, end = " , ")
+   sum=n1 +n2
+   n1 = n2
+   n2 = sum
+   count += 1
